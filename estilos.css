@@ -1,1 +1,92 @@
+nav ul  {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+nav ul {
+  color: white;
+  padding: 10px 15px;
+}
+
+.tarjeta {
+  background-color: beige;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: lightblue;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li ul {
+    position: static;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+@media (min-width: 481px) {
+  body {
+    background-color: rgb(50, 47, 255);
+  }
+
+  section {
+    justify-content: space-around;
+  }
+
+  .tarjeta {
+    flex: 1 1 45%;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    background-color: yellow;
+  }
+
+  section {
+    justify-content: space-between;
+  }
+
+  .tarjeta {
+    flex: 1 1 30%;
+  }
+}
+
+
 
